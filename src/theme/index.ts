@@ -5,6 +5,10 @@ import { extendTheme } from "@chakra-ui/react";
 import "@fontsource/inter"; // Defaults to weight 400
 import "@fontsource/inter/500.css";
 
+import "@fontsource/exo"; // Defaults to weight 400
+import "@fontsource/exo/500.css";
+import "@fontsource/exo/600.css";
+
 // Global style overrides
 import styles from "./styles";
 
