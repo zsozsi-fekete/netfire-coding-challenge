@@ -13,7 +13,8 @@ const colors = {
 
     // hero colors
     "hero-text": "#ECECEC",
-    "badge-bg": "#443B3B",
+    "badge-bg": "#D9D9D930",
+    "badge-border": "#443B3B",
     "play-button-border": "#888D8E",
     "slider-track": "#252525",
     "slider-track-filled": "#CAE871",
