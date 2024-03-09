@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Setup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Run `npm i` in the root folder
+- Run `npm run dev` to start local development environment
+- Run `npm run build` to build the project
+- Run `npm run preview` to preview the built project
 
-Currently, two official plugins are available:
+# Choice of technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I've choosen a simple React + Typescript + Vite based project with Chakra UI.
 
-## Expanding the ESLint configuration
+- React: For a component-based architecture, allowing me to build the UIs by creating reusable and modular components. This modular approach makes it easier to manage and scale applications.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Typescript: For static typing, allowing me to define types and interfaces. This helps catch type-related errors at compile-time rather than runtime, leading to more robust and maintainable code.
 
-- Configure the top-level `parserOptions` property like this:
+- Vite: For a fast development server and fast build times.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Chakra UI: For the component-based design, allowing me to use pre-designed components, create theming and reusable styles.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Eslint: For maintaining code consistency by enforcing a set of coding standards and style rules across a codebase.
+
+# Assumptions made
+
+- I assumed that the NavBar buttons have hover effect
+- I assumed that the NavBar is fixed to the top and stays there while scrolling.
+- I assumed that the Hero section should be taking the full avalilable screen height regardless of the screen size.
+- I assumed that the design is "always right", even if I did not agree with it. For example: in the NavBar right side buttons have different gaps between them. The first and the second button has a gap of 20px, but the second and the third button has 17px, which is inconsistent. Or the design contains multiple similar text/background colors, which are different shades.
