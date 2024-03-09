@@ -10,6 +10,14 @@ const colors = {
     "nav-button-text-active": "#111010",
     "nav-button-bg": "#D9D9D9",
     "nav-button-bg-active": "#E5E5DF",
+
+    // hero colors
+    "hero-text": "#ECECEC",
+    "badge-bg": "#443B3B",
+    "play-button-border": "#888D8E",
+    "slider-track": "#252525",
+    "slider-track-filled": "#CAE871",
+    "video-player-time": "#C9C4C1",
   },
 };
 

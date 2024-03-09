@@ -30,6 +30,7 @@ const NavLink = ({ children, href, isActive }: Props) => {
         fontSize="sm"
         color={`brand.nav-button-text${isActive ? "-active" : ""}`}
         textTransform="uppercase"
+        letterSpacing="0.07rem"
       >
         {children}
       </Text>

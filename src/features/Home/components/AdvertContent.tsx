@@ -7,7 +7,12 @@ const AdvertContent = () => {
   };
 
   return (
-    <Text fontFamily="Inter" fontSize="sm" fontWeight="medium">
+    <Text
+      fontFamily="Inter"
+      fontSize="sm"
+      fontWeight="medium"
+      letterSpacing="0.07rem"
+    >
       <Highlight
         query={properties.query}
         styles={{ color: "brand.advert-highlight" }}

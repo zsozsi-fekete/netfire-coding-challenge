@@ -26,7 +26,6 @@ const NavBar = () => {
   return (
     <Flex
       as="header"
-      position="fixed"
       w="100%"
       h="101px"
       bg="brand.grey-2"
