@@ -29,23 +29,25 @@ const NavBar = () => {
       w="100%"
       h="101px"
       bg="brand.grey-2"
-      justify="space-around"
+      justify="center"
       align="center"
       pos="relative"
     >
-      <HStack as={"nav"} spacing="15px" display="flex">
-        {links.map((link) => (
-          <NavLink key={link.label} href={link.href} isActive={link.isActive}>
-            {link.label}
-          </NavLink>
-        ))}
-      </HStack>
+      <Flex w="70%" justify="space-between" align="center">
+        <HStack as={"nav"} spacing="15px" display="flex">
+          {links.map((link) => (
+            <NavLink key={link.label} href={link.href} isActive={link.isActive}>
+              {link.label}
+            </NavLink>
+          ))}
+        </HStack>
+        <HStack spacing="17px" display="flex">
+          <NavIconButton label="Cart" src={cart} />
+          <NavIconButton label="User" src={user} />
+          <NavIconButton label="Search" src={search} />
+        </HStack>
+      </Flex>
       <Image src={logo} alt="Logo" pos="absolute" />
-      <HStack spacing="17px" display="flex">
-        <NavIconButton label="Cart" src={cart} />
-        <NavIconButton label="User" src={user} />
-        <NavIconButton label="Search" src={search} />
-      </HStack>
     </Flex>
   );
 };
