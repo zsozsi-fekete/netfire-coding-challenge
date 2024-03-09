@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <Flex
-      align="center"
+      align="flex-end"
       justify="center"
       pos="relative"
       h="calc(100vh - 172px)"
@@ -31,10 +31,16 @@ const Hero = () => {
         objectFit="cover"
         filter="brightness(0.6)"
       />
-      <Flex zIndex={1} align="center" justify="space-around" w="100%">
+      <Flex
+        zIndex={1}
+        align="center"
+        justify="space-around"
+        w="100%"
+        mb="178px"
+      >
         <Flex direction="column" align="flex-start" gap="38px" w="70%">
           <StyledBadge textProps={{ children: properties.badgeText }} />
-          <Flex direction="column">
+          <Flex direction="column" mb="20px">
             <Text
               layerStyle="accent"
               bgClip="text"

@@ -2,7 +2,7 @@ import cart from "@/assets/cart.svg";
 import logo from "@/assets/logo.svg";
 import user from "@/assets/user.svg";
 import search from "@/assets/search.svg";
-import { Flex, HStack, Image } from "@chakra-ui/react";
+import { Box, Flex, HStack, Image } from "@chakra-ui/react";
 import NavIconButton from "./NavIconButton";
 import NavLink from "./NavLink";
 
@@ -42,7 +42,9 @@ const NavBar = () => {
           ))}
         </HStack>
         <HStack spacing="17px" display="flex">
-          <NavIconButton label="Cart" src={cart} />
+          <Box mr="3px">
+            <NavIconButton label="Cart" src={cart} />
+          </Box>
           <NavIconButton label="User" src={user} />
           <NavIconButton label="Search" src={search} />
         </HStack>
