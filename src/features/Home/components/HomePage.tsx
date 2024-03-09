@@ -5,6 +5,7 @@ import { Box } from "@chakra-ui/react";
 import AdvertContent from "./AdvertContent";
 import AccentBar from "@/components/AccentBar";
 import Hero from "./Hero";
+import Example from "./Example";
 
 const HomePage = () => {
   return (
@@ -16,8 +17,10 @@ const HomePage = () => {
         <AccentBar />
         <NavBar />
       </Box>
-      <Box mt="172px" h="3000px" bg="yellow.50">
+      <Box mt="172px">
         <Hero />
+        <Example />
+        <AccentBar />
       </Box>
       <Footer />
     </>

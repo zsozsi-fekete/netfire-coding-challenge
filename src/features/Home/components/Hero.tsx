@@ -1,5 +1,5 @@
 import video from "@/assets/birds-flying.mp4";
-import HeroBadge from "@/components/HeroBadge";
+import StyledBadge from "@/components/StyledBadge";
 import MediaPlayer from "@/components/MediaPlayer";
 import useVideo from "@/hooks/useVideo";
 import { Box, Flex, Text } from "@chakra-ui/react";
@@ -29,16 +29,18 @@ const Hero = () => {
         w="100%"
         h="100%"
         objectFit="cover"
+        filter="brightness(0.6)"
       />
       <Flex zIndex={1} align="center" justify="space-around" w="100%">
         <Flex direction="column" align="flex-start" gap="38px" w="70%">
-          <HeroBadge text={properties.badgeText} />
+          <StyledBadge textProps={{ children: properties.badgeText }} />
           <Flex direction="column">
             <Text
               layerStyle="accent"
               bgClip="text"
               fontSize="45px"
               fontFamily="Exo"
+              lineHeight="57px"
               fontWeight="semibold"
             >
               {properties.text1}
@@ -46,6 +48,7 @@ const Hero = () => {
             <Text
               fontSize="45px"
               fontFamily="Exo"
+              lineHeight="57px"
               fontWeight="semibold"
               color="brand.hero-text"
             >
@@ -54,6 +57,7 @@ const Hero = () => {
             <Text
               fontSize="45px"
               fontFamily="Exo"
+              lineHeight="57px"
               fontWeight="semibold"
               color="brand.hero-text"
             >

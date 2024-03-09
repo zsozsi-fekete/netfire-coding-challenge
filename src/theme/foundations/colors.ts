@@ -15,10 +15,16 @@ const colors = {
     "hero-text": "#ECECEC",
     "badge-bg": "#D9D9D930",
     "badge-border": "#443B3B",
+    "badge-text": "#1C1B1B",
     "play-button-border": "#888D8E",
     "slider-track": "#252525",
     "slider-track-filled": "#CAE871",
     "video-player-time": "#C9C4C1",
+
+    // example section colors
+    "example-bg": "#ECECEC",
+    "example-text": "#1C1B1B",
+    "see-more-link": "#41423E",
   },
 };
 

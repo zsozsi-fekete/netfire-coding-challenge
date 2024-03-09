@@ -1,10 +1,11 @@
-import { Badge, Text } from "@chakra-ui/react";
+import { Badge, BadgeProps, Text, TextProps } from "@chakra-ui/react";
 
 interface Props {
-  text: string;
+  textProps?: TextProps;
+  badgeProps?: BadgeProps;
 }
 
-const StyledBadge = ({ text }: Props) => {
+const StyledBadge = ({ textProps, badgeProps }: Props) => {
   return (
     <Badge
       bg="brand.badge-bg"
@@ -13,10 +14,15 @@ const StyledBadge = ({ text }: Props) => {
       borderRadius="12px"
       borderWidth="1px"
       borderColor="brand.badge-border"
+      {...badgeProps}
     >
-      <Text color="white" fontFamily="Exo" size="xs" letterSpacing="0.07rem">
-        {text}
-      </Text>
+      <Text
+        color="white"
+        fontFamily="Exo"
+        size="xs"
+        letterSpacing="0.07rem"
+        {...textProps}
+      />
     </Badge>
   );
 };
