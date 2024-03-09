@@ -1,5 +1,6 @@
 import StyledBadge from "@/components/StyledBadge";
 import { Box, Flex, Link, Mark, Text, useHighlight } from "@chakra-ui/react";
+import { Fragment } from "react";
 
 const Example = () => {
   const properties = {
@@ -38,10 +39,11 @@ const Example = () => {
             letterSpacing="-0.05em"
             color="brand.example-text"
           >
-            {chunks.map((chunk) => {
-              if (!chunk.match) return chunk.text;
+            {chunks.map((chunk, i) => {
+              if (!chunk.match)
+                return <Fragment key={i}>{chunk.text}</Fragment>;
               return (
-                <Mark layerStyle="accent" bgClip="text">
+                <Mark key={i} layerStyle="accent" bgClip="text">
                   {chunk.text}
                 </Mark>
               );
