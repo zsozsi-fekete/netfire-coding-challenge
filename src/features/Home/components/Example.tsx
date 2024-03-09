@@ -1,13 +1,5 @@
 import StyledBadge from "@/components/StyledBadge";
-import {
-  Box,
-  Button,
-  Flex,
-  Link,
-  Mark,
-  Text,
-  useHighlight,
-} from "@chakra-ui/react";
+import { Box, Flex, Link, Mark, Text, useHighlight } from "@chakra-ui/react";
 
 const Example = () => {
   const properties = {
@@ -43,6 +35,7 @@ const Example = () => {
             fontFamily="Exo"
             fontWeight="semibold"
             lineHeight="40px"
+            letterSpacing="-0.05em"
             color="brand.example-text"
           >
             {chunks.map((chunk) => {
@@ -61,6 +54,7 @@ const Example = () => {
           fontWeight="semibold"
           textDecoration="underline"
           color="brand.see-more-link"
+          letterSpacing="0.07em"
           mt="17px"
         >
           {properties.seeMore}

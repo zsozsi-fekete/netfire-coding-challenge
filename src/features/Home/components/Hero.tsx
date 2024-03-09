@@ -41,6 +41,7 @@ const Hero = () => {
               fontSize="45px"
               fontFamily="Exo"
               lineHeight="57px"
+              letterSpacing="-0.05em"
               fontWeight="semibold"
             >
               {properties.text1}
@@ -49,6 +50,7 @@ const Hero = () => {
               fontSize="45px"
               fontFamily="Exo"
               lineHeight="57px"
+              letterSpacing="-0.05em"
               fontWeight="semibold"
               color="brand.hero-text"
             >
@@ -58,6 +60,7 @@ const Hero = () => {
               fontSize="45px"
               fontFamily="Exo"
               lineHeight="57px"
+              letterSpacing="-0.05em"
               fontWeight="semibold"
               color="brand.hero-text"
             >

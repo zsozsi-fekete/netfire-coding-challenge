@@ -25,6 +25,10 @@ const colors = {
     "example-bg": "#ECECEC",
     "example-text": "#1C1B1B",
     "see-more-link": "#41423E",
+
+    // footer colors
+    "footer-bg": "#D9D9D9",
+    "footer-brand-name": "#443B3B",
   },
 };
 
